@@ -1,0 +1,32 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'register.css'%}">
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <div class="signUpForm">
+        <h1>sign Up Below</h1>
+
+        {% for message in messages %}
+        <h5>{{message}}</h5>
+        {% endfor%}
+        <form method="POST" action="register">
+            {% csrf_token %}
+            <p> Username: </p>
+            <input type="text" name="username" />
+            <p> Email: </p>
+            <input type="email" name="email" />
+            <p> Password: </p>
+            <input type="password" name="password" />
+            <p> Repeat password: </p>
+            <input type="password" name="password1" /><br />
+            <input type="submit" id="submit" />
+        </form>
+    </div>
+   
+</body>
+</html>

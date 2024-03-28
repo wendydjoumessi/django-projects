@@ -1,0 +1,30 @@
+.signUpForm{
+    text-align: center;
+    background-color: rgb(209, 177, 212);
+    background-image: url('assets/img/features.jpg');
+    margin:  0 500px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#submit{
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-left: 90px;
+    padding: 5px 10px;
+    display: flex;
+    
+}
+
+h1{
+    color: rgb(181, 218, 205);
+}
+
+#submit:hover{
+    font-weight: bold;
+    font-family:cursive;
+}
+
+h5{
+    color: red;
+}
